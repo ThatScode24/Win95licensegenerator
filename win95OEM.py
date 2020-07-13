@@ -23,13 +23,13 @@ def trial():
 	z = int(str(d5) + str(d6) + str(d7) + str(d8) + str(d9) + str(d10) + str(d11))
 	
 
-
 	if int(z) % 7 == 0:
 		if not d16 == 0 and not d16 == 8 and not d16 == 9:
 			print(f"{d1}{d4}-OEM-{d5}{d6}{d7}{d8}{d9}{d10}{d11}-{d12}{d13}{d14}{d15}{d16}")
 
+
 		else:
-			a = 1
+			A = 1
 
 	else:
 		a = 1
