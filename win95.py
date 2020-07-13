@@ -1,13 +1,6 @@
+__author__ = 'ThatScode'
+
 import random
-
-
-
-
-
-
-
-
-
 
 def trial():
 
@@ -24,14 +17,18 @@ def trial():
 		z = int(str(d4) + str(d5) + str(d6) + str(d7) + str(d8) + str(d9) + str(d10))
 
 	
-		if int(z) % 21 == 0:
-			print(f"{d1}{d2}{d3}-{d4}{d5}{d6}{d7}{d8}{d9}{d10}")
+		if int(z) % 7 == 0:
+			if d4 + d5 + d6 + d7 + d8 + d9 + d10 == 21:
+				print(f"{d1}{d2}{d3}-{d4}{d5}{d6}{d7}{d8}{d9}{d10}")
+			
+			else:
+				b = 1
 
 		else:
 			a = 1
 
 
-numtrials = 100000
+numtrials = int(input(f"Program made by {__author__}. How many trials do you want? : "))
 
 for i in range(numtrials):
 	trial()
