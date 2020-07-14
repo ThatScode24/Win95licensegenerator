@@ -1,4 +1,4 @@
-__author__ = "ThatScode"
+__author__ = "miha_focsa"
 
 import random
 
@@ -29,8 +29,7 @@ def trial():
 
 
 		else:
-			A = 1
-
+			a = 1
 	else:
 		a = 1
 
