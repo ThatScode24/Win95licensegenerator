@@ -14,7 +14,7 @@ def trial():
 
 
 	z = int(str(d2) + str(d3) + str(d4) + str(d5) + str(d6) + str(d7) + str(d8))
-	x = int(d1)
+
 
 	if int(z) % 7 == 0:
 		
