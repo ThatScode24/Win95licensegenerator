@@ -2,6 +2,8 @@ __author__ = 'miha_focsa'
 
 import random
 
+licenses = 0
+
 def trial():
 	d1 = random.randint(100, 999)
 	d2 = random.randint(0, 9)
@@ -22,18 +24,20 @@ def trial():
 			
 			if not d8 == 8 and not d8 == 9 and not d8 == 0:
 				print(f"{d1}-{d2}{d3}{d4}{d5}{d6}{d7}{d8}")
+				global licenses
+				licenses += 1
 
 			else:
-				a = 1
+				foundlicense = False
 
 		else:
-			a = 1
+			foundlicense = False
 	else:
-		a = 1
+		foundlicense = False
 
 
-numtrials = int(input(f"Program made by {__author__}. How many trials do you want? : "))
+numlicenses = int(input(f"Program made by {__author__}. How many licenses do you want? : "))
 
-for i in range(numtrials):
+while numlicenses != licenses:
 	trial()
 				
